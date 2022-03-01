@@ -5,8 +5,8 @@ class Header extends Component {
         console.log(this.props)
         return (
             <div>
-            {this.props.title} <br/>
-            {this.props.newData}
+                {this.props.title} <br />
+                {this.props.newData}
             </div>
         )
     }
