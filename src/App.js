@@ -25,7 +25,7 @@ class App extends Component{
     return (
       <div className="App">
       {this.state.name}
-      <Header title="header component2"/>
+      <Header title="header component2" newData={this.state.desc}/>
       Content.....
       <Footer title="footer component2"/>
       </div>
