@@ -15,6 +15,9 @@ import React, {Component} from "react";
 import Footer from './component/Footer';
 import Header from './component/Header';
 
+import MyImg from './assets/123.jpeg'
+import "./App.css"
+
 class App extends Component{
 
   state ={
@@ -27,6 +30,8 @@ class App extends Component{
     console.log(this.state)
     return (
       <div className="App">
+      <img src={MyImg}/>
+      <img src="/public/images/12345.jpeg"/>
       {this.state.name}
       <Header title="header component2" newData={this.state.desc}/>
       Content.....
