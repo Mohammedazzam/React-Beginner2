@@ -12,12 +12,16 @@
 
 
 import React, {Component} from "react";
+import Footer from './component/Footer';
+import Header from './component/Header';
 
 class App extends Component{
   render() {
     return (
       <div className="App">
-        Hello Mohammed Azzam
+      <Header/>
+      Content.....
+      <Footer/>
       </div>
     );
   }
