@@ -24,6 +24,7 @@ class App extends Component{
     console.log(this.state)
     return (
       <div className="App">
+      {this.state.name}
       <Header title="header component2"/>
       Content.....
       <Footer title="footer component2"/>
