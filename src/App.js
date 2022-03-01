@@ -16,7 +16,12 @@ import Footer from './component/Footer';
 import Header from './component/Header';
 
 class App extends Component{
+  state ={
+    name: 'App Component',
+    desc: 'this is app component'
+  }
   render() {
+    console.log(this.state)
     return (
       <div className="App">
       <Header title="header component2"/>
