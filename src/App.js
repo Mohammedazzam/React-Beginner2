@@ -19,9 +19,9 @@ class App extends Component{
   render() {
     return (
       <div className="App">
-      <Header/>
+      <Header title="header component2"/>
       Content.....
-      <Footer/>
+      <Footer title="footer component2"/>
       </div>
     );
   }

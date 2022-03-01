@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 
 class Header extends Component {
     render() {
+        console.log(this.props)
         return (
-            <div>Header Component</div>
+            <div>{this.props.title}</div>
         )
     }
 }
