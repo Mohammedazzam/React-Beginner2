@@ -59,7 +59,9 @@ class App extends Component {
     return (
       <div className="App">
         App Comp
-        <Home/>
+        <ul>
+          <Home/>
+        </ul>
       </div>
     );
   }
