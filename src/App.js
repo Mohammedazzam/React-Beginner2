@@ -55,13 +55,23 @@ import React, { Component } from "react";
 import Home from './component/Home';
 
 class App extends Component {
+  state ={
+    name: 'App Comp'
+  }
+
+  updateName = () =>{
+    this.setState({
+      name:'App Comp'
+    })
+  }
+
   render() {
+    console.log("App Comp")
     return (
       <div className="App">
         App Comp
-        <ul>
-          <Home/>
-        </ul>
+        <button onClick={this.updateName}>Update</button>
+        <Home/>
       </div>
     );
   }

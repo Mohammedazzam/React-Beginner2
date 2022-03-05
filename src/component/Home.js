@@ -1,18 +1,13 @@
-import React, { Component ,Fragment } from 'react'
+import React, { Component ,Fragment, PureComponent } from 'react'
 
-class Home extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: 'Home'
-        }
-    }
-    render() {
+// class Home extends Component {
+    class Home extends PureComponent {
+        render() {
+        console.log("Home Comp")
         return (
-            <Fragment>
-                <li>Home</li>
-                <li>About</li>
-            </Fragment>
+            <div>
+                Home Comp
+            </div>
         )
     }
 }
