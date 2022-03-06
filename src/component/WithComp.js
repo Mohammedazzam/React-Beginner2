@@ -6,12 +6,15 @@ const withComp = (OrgComp) => {
         state = {
             name: "Comp"
         }
-        updateNameState = () =>{
-            this.setState({name:'Comp 2'})
+        updateNameState = () => {
+            this.setState({ name: 'Comp 2' })
         }
-    
+
         render() {
-            return <OrgComp name= {this.state.name} updateNameState={this.updateNameState}/>
+            return <OrgComp name={this.state.name}
+            updateNameState={this.updateNameState}
+            {...this.props}
+            />
         }
     }
 }

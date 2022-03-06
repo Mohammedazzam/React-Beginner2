@@ -8,6 +8,7 @@ class CompA extends Component {
         console.log(this.props)
         return (
             <div>
+                {this.props.test}
                 {name}
                 <button onClick={updateNameState}>Update Name</button>
             </div>
