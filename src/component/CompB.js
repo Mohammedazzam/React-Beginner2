@@ -3,10 +3,11 @@ import withComp from './WithComp'
 
 class CompB extends Component {
     render() {
+        const{name, updateNameState} = this.props;
         return (
             <div>
-                {this.props.name}
-                <button onClick={this.props.updateNameState}>Update Name</button>
+                {name}
+                <button onClick={updateNameState}>Update Name</button>
             </div>
         )
     }
