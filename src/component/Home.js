@@ -1,6 +1,5 @@
-import React, { Component ,Fragment, PureComponent } from 'react'
+import React, { PureComponent } from 'react'
 
-// class Home extends Component {
     class Home extends PureComponent {
         render() {
         console.log("Home Comp")
