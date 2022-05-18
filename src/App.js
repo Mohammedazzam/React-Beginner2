@@ -166,17 +166,140 @@
 // export default App;
 
 
-/**************************************/
-import React from "react";
-import Widget from "./componentFunction/Widget";
-function App() {
-  return (
+/******************use Context********************/
+// import React from "react";
+// import Widget from "./componentFunction/Widget";
+// function App() {
+//   return (
+//     <div>
+//       <h1>Hooks [use Context]</h1>
+//       <Widget/>
+//       <Widget/>
+//       <Widget/>
+//     </div>
+//   )
+// }
+// export default App
+
+
+/**************use Ref****************/
+
+// import React , {useRef , useState} from "react";
+
+// function App(){
+//   const [user, setUser] = useState('')
+//   return(
+//     <div>
+//       <h1>Hooks [UseRef]</h1>
+//       <input type="text" onChange={(e) => setUser(e.target.value)}/>
+//       {user}
+//     </div>
+
+//   )
+// }
+// export default App;
+
+
+
+// import React , {useRef , useState, useEffect} from "react";
+
+// function App(){
+//   const [user, setUser] = useState('')
+
+//   useEffect(() => {
+//     console.log("ay 7age")
+//   }, [user])
+
+//   return(
+//     <div>
+//       <h1>Hooks [UseRef]</h1>
+//       <input type="text" onChange={(e) => setUser(e.target.value)}/>
+//       {user}
+//     </div>
+
+//   )
+// }
+// export default App;
+
+
+
+
+// import React , {useRef , useState, useEffect} from "react";
+
+// function App(){
+//   const [user, setUser] = useState('')
+
+//   const refInput = useRef();
+
+//   useEffect(() => {
+//     // console.log(refInput)
+//     refInput.current.focus()
+//   }, [])
+
+//   return(
+//     <div>
+//       <h1>Hooks [UseRef]</h1>
+//       <input ref={refInput} type="text" onChange={(e) => setUser(e.target.value)}/>
+//       {user}
+//     </div>
+
+//   )
+// }
+// export default App;
+
+
+
+// import React , {useRef , useState, useEffect} from "react";
+
+// function App(){
+//   const [user, setUser] = useState('')
+
+//   const refInput = useRef();
+
+//   useEffect(() => {
+//     // console.log(refInput)
+//     refInput.current.focus()
+//     refInput.current.value = "Mohammed"
+//   }, [])
+
+//   return(
+//     <div>
+//       <h1>Hooks [UseRef]</h1>
+//       <input ref={refInput} type="text" onChange={(e) => setUser(e.target.value)}/>
+//       {user}
+//     </div>
+
+//   )
+// }
+// export default App;
+
+
+
+
+
+
+
+import React , {useRef , useState, useEffect} from "react";
+
+function App(){
+  const [user, setUser] = useState('')
+
+  const count = useRef(0)
+
+  const refInput = useRef();
+
+  useEffect(() => {
+    count.current = count.current + 1
+  }, [user])
+
+  return(
     <div>
-      <h1>Hooks [use Context]</h1>
-      <Widget/>
-      <Widget/>
-      <Widget/>
+      <h1>Hooks [UseRef]</h1>
+      <input ref={refInput} type="text" onChange={(e) => setUser(e.target.value)}/>
+      {user}  <br/>
+      {count.current}
     </div>
+
   )
 }
-export default App
+export default App;
