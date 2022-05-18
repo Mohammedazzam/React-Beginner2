@@ -167,18 +167,16 @@
 
 
 /**************************************/
-import React, {Component } from "react";
-import CompA from "./componentFunction/CompA";
-
-class App extends Component {
-  state = {}
-  
-  render() {
-    return (
-      <div>
-        <CompA/>
-      </div>
-    )
-  }
+import React from "react";
+import Widget from "./componentFunction/Widget";
+function App() {
+  return (
+    <div>
+      <h1>Hooks [use Context]</h1>
+      <Widget/>
+      <Widget/>
+      <Widget/>
+    </div>
+  )
 }
-export default App;
+export default App
